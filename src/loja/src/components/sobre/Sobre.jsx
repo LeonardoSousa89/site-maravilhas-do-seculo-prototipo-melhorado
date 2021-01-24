@@ -97,8 +97,8 @@ export default class Sobre extends Component {
                                    <img  src={Seller} className="componentImgSobreSeller" />
                                    </a>
                                    <p>
-                                     clique no ícone acima e venha nos conhecer! 
-                                     no <strong>Timol&copy;</strong> 
+                                     clique no <i className="ComponentIconComunication">ícone</i><div></div>acima e venha nos <strong>conhecer!</strong>
+                                       {/** <strong>Timol&copy;</strong>  */}
                                    </p>
                             </div>
                         </div>

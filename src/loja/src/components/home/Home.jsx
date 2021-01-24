@@ -12,7 +12,7 @@ import squeeze_timol from '../../assets/squeeze_timol.jpeg'
 import sylocimol_mini from '../../assets/sylocimol_mini.png'
 import toph_mineralizador from '../../assets/toph_mineralizador.png'
 import combo_mini from '../../assets/combo_mini.png'
-import Mail from '../../assets/mail.jpg'
+import Mail from '../../assets/mail-2.png'
 import faceProf from '../../assets/faceProf.png'
 import InstaProf from '../../assets/instaProf.png'
 import Perfil from '../../assets/perfil.jpg'
@@ -71,7 +71,7 @@ export default class Home extends Component {
                         <div className="componentHomeContentCard-1">
                                <div className="componentHomeContentElementCard-1">
                                     
-                                    <a href="https://www.timol.com.br/prodCarrinho.aspx?prod=289" target="blank">
+                                    <a href="https://www.timol.com.br/prodLista.aspx" target="blank">
                                         <h3 className="componentHomeContentElementCardTitle-1">Ter uma boa saúde requer trabalho e muito
                                             cuidado!<br /> <div className="destaq">MAS!</div> <br /> <br />
                                             temos o produto certo para você!
@@ -84,7 +84,7 @@ export default class Home extends Component {
 
                         <div className="componentHomeContentCard-2">
                             <div className="componentHomeContentElementCard-2">
-                                <a href="https://www.timol.com.br/prodCarrinho.aspx?prod=130" target="blank">
+                                <a href="https://www.timol.com.br/prodLista.aspx" target="blank">
                                         <h5 className="ComponentHomeProductDescription-1">
                                             Sylocimol-Mini
                                         </h5>
@@ -96,7 +96,7 @@ export default class Home extends Component {
                             </div>
 
                             <div className="componentHomeContentElementCard-3">
-                                <a href="https://www.timol.com.br/prodCarrinho.aspx?prod=134" target="blank">
+                                <a href="https://www.timol.com.br/prodLista.aspx" target="blank">
                                         <h5 className="ComponentHomeProductDescription-2">
                                             Top H+ Mineralizador Mini
                                         </h5>
@@ -108,7 +108,7 @@ export default class Home extends Component {
                             </div>
 
                             <div className="componentHomeContentElementCard-4">
-                                <a href="https://www.timol.com.br/prodCarrinho.aspx?prod=147" target="blank">
+                                <a href="https://www.timol.com.br/prodLista.aspx" target="blank">
                                         <h5 className="ComponentHomeProductDescription-3">
                                              Combo Mini
                                         </h5>

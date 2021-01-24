@@ -136,8 +136,8 @@ a{
    
 }
 .componentImgHomeEmail,.componentImgHomePerson{
-    height: 70px;
-    width: 90px;
+    height: 90px;
+    width: 110px;
     padding: 5px;
 }
 .componentHomeEmail{

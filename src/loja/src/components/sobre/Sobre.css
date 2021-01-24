@@ -86,7 +86,7 @@ em{
 }
 .componentContatoSobreRedesSociaisFaceProf{
     width: 23%;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 10px;
     padding: 10px;
 }
@@ -102,13 +102,14 @@ em{
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-   /* border: solid rgba(0,0,0,0.2) 1px;*/
     padding: 3px;
-    margin-left: 2px;
 }
 .componentImgSobreSeller{
     height: 30%;
     width: 30%;
+}
+.ComponentIconComunication{
+    text-decoration: underline;
 }
 .componentSobreCopy{
     margin-top: 35px;
@@ -131,9 +132,11 @@ em{
 
                   /*    area de responsividade    */
 
-                 /*  falta finalizar esta parte */
-
-
+@media(max-width:230px){
+    .componentContatoSobreProfileTimol{
+        display: none;
+    }
+}
 @media(max-width:300px){
 
     .componentImgSobre{
@@ -150,9 +153,11 @@ em{
     }
 }
 @media(max-width:400px){
-
     .componentImgSobre{
-        height: 100px;
+        max-height: 100px;
+    }
+    .componentMissaoVisaoValores{
+      display: none;
     }
 }
 @media(max-width:450px){
@@ -166,18 +171,64 @@ em{
     .componentImgSobre{
         height: 150px;
     }
-
-    .componentDescriptionSobreContent{
-     
-    }
-
-    .componentMissaoVisaoValores{
-    }
 }
 @media(max-width:600px){
 
     .componentImgSobre{
         height: 350px;
+    }
+    .componentClientSpeak{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: whitesmoke;
+    }
+    .componentcardSobreComment1, .componentcardSobreComment2, .componentcardSobreComment3{
+        width: 60%;
+    }
+}
+@media(max-width:700px){
+ .componentContatoSobreRedesSociaisFaceProf,  .componentContatoSobreRedesSociaisInstaProf{
+        display: none;
+    }
+    .componentContatoSobreProfileTimol{
+        margin-right: 10px;
+    }
+}
+       
+    
+@media(max-width:800px){
+  
+    .componentContatoSobreRedesSociaisFaceProf{
+        width: 23%;
+        margin-left: 10px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+@media(min-width:801px){
+    .componentContatoSobreRedesSociaisInstaProf{
+        margin-left: 50px;
+        width: 21%;
+        padding: 10px;
+    }
+}
+@media(min-width:1280px){
+    .componentContatoSobreRedesSociaisInstaProf{
+        margin-left: 120px;
+        width: 21%;
+        padding: 10px;
+    }
+    .componentContatoSobreRedesSociaisFaceProf{
+        margin-left: 30px;
+    }
+}
+@media(min-width:1400px){
+    .componentContatoSobreRedesSociaisFaceProf{
+        margin-left: 50px;
     }
 }
 
