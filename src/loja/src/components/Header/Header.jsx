@@ -42,7 +42,7 @@ export default class Header extends Component   {
                     <Link className="componentLink" to="/"><h3>Home</h3></Link>
                     <Link className="componentLink" to="/fale-conosco"><h3>Fale conosco</h3></Link>
                     <Link className="componentLink" to="/sobre"><h3>Sobre</h3></Link>
-                    <a className="componentLink" href="https://www.timol.com.br/direto_fabrica.aspx?ref=3080" target="_blank"><h3>Loja</h3></a>
+                    <a className="componentLink" href="https://www.timol.com.br/prodLista.aspx"  target="_blank"><h3>Loja</h3></a>
                 </nav>
 
 
@@ -57,7 +57,7 @@ export default class Header extends Component   {
                         <ul className="componentLinkHome"> <Link className="LinkHome" to="/"><h3>Home</h3></Link></ul>
                         <ul className="componentLinkFormulario"> <Link className="LinkFaleConosco" to="/fale-conosco"><h3>Fale conosco</h3></Link></ul>
                         <ul className="componentLinkSobre">    <Link className="LinkSobre" to="/sobre"><h3>Sobre</h3></Link></ul>
-                        <ul className="componentLinkLoja"> <a className="LinkLoja" href="https://www.timol.com.br/direto_fabrica.aspx?ref=3080" target="_blank"><h3>Loja</h3></a></ul>
+                        <ul className="componentLinkLoja"> <a className="LinkLoja" href="https://www.timol.com.br/prodLista.aspx" target="_blank"><h3>Loja</h3></a></ul>
                    </ul>
                 </nav>  
 

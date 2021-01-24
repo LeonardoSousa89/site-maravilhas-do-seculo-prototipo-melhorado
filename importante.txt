@@ -1,0 +1,12 @@
+Os links da loja
+estão apresentando um comportamento
+inesperado, eles estão enviando
+a áreas sem o representante
+"Javan" tipo um fato
+de token expirado, porém o link 
+no instagram direciona certinho a loja
+dele.
+
+
+ver casos e tentar resolver 
+antes de postar
