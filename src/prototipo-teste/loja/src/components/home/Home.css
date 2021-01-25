@@ -170,6 +170,12 @@ a{
     border-radius: 6px;
     padding: 10px;
 }
+.componentHomeFooterLittleDevice{
+    display: none;
+}
+.componentHomeFooterLittleDeviceSocialArgumentSiga{
+    display: none;
+}
 
 
 
@@ -178,22 +184,159 @@ a{
                     /*  área de responsividade */
 
 
-@media(max-width:200px){
-
-} 
 @media(max-width:300px){
-
+    .componentHomeContentCard-2{
+        display: none;
+    }
 } 
- @media(max-width:400px){
-
+@media(max-width:350px){
+    .componentHomeLittleDeviceRedesSociais{
+        visibility: hidden;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        flex-wrap: wrap;
+        max-height: 20px;
+    }
+    .componentHomeFooterLittleDeviceSocialArgumentSiga{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
 } 
- @media(max-width:500px){
-
- }                        
-@media(max-width:600px){
-
+@media(max-width:360px){
+    .componentHomeContentElementCard-3{
+        visibility: hidden;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        flex-wrap: wrap;
+        max-height: 5px;
+    }
 }
-@media(max-width:700px){
+@media(max-width:370px){
+    .componentHomeContentElementCard-1{
+        display: none;
+    }
+}
+@media(max-width:380px){
+    .componentHomeContentElementCard-1{
+        font-size: xx-small;
+    }
+}
+ @media(max-width:400px){
+    .componentHomeContentElementCard-1{
+        font-size: x-small;
+    }
+} 
+@media(max-width:500px){
+    .componentHomeContentElementCard-1{
+        width: 80%;
+    }
+    .componetInternalPromotion-1,.componetInternalPromotion-2,.componetInternalPromotion-3{
+        text-decoration: none;
+    }
+}
+ @media(max-width:600px){ /* aqui */
+     .ComponentHomeFooter{
+         visibility: hidden;
+         display: flex;
+         flex-direction: row;
+         overflow: hidden;
+         flex-wrap: wrap;
+         max-height: 20px;
+     }
+    .componentHomeFooterLittleDevice{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 5px;
+        margin-bottom: -30px;
+    }
+    .componentHomeInputLittleDeviceName,.componentHomeInputLittleDeviceEmail{
+        width: 80%;
+        padding: 10px;
+        border: solid 1px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        outline: none;
+        margin: 10px 0;
+    }
+    .componentButtonFooterLittleDeviceEnviar{
+        justify-self: end;
+        align-self: flex-end;
+        margin: 0 8%;
+        margin-bottom: 50px;
+        width: 70px;
+        padding: 5px;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        color: whitesmoke;
+        background: linear-gradient(97deg, blue 45%, darkblue 55%);
+        cursor: pointer;
+        
+    }
+    .componentButtonFooterLittleDeviceEnviar:hover{
+        background: linear-gradient(97deg, green 45%, darkgreen 55%);
+    }
+    .componentHomeLittleDeviceRedesSociais{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        overflow: hidden;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .componentHomeFace{
+        height: 50px;
+       
+    }
+    .componentHomeInstagram{
+      
+    }
+ } 
+ /*
+ @media(max-width:600px){
+    .ComponentHomeFooterLinks, .componentToReceiveEmail{
+        width: 100%;
+    }
+}  */ 
+ @media(max-width:800px){
+    .ComponentHomeFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin:10px;
+    }
+    .ComponentHomeFooterLinks, .componentToReceiveEmail{
+        width: 100%;
+    }
+}                      
+@media(max-width:900px){
+    .componentHomeContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: whitesmoke;
+    }
+    .componentHomeContentCard-1, .componentHomeContentCard-2{
+        width: 100%;
+    }
+    .componentHomeContentElementCard-2, .componentHomeContentElementCard-3, .componentHomeContentElementCard-4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 3em;
+    }
 
 }
 

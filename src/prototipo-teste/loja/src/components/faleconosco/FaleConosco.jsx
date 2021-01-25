@@ -24,16 +24,16 @@ export default class FaleConosco extends Component {
 
                     <div className="componentFormulario">
                             <div className="componentConteinerName">
-                                <input placeholder="    insira seu nome..."  type="text"  className="componentPutName"/>
+                                <input placeholder="insira seu nome..."  type="text"  className="componentPutName"/>
                             </div>
 
                             <div className="componentConteinerEmail">
-                                <input placeholder="    insira seu email... obrigatório *  " type="text"  className="componentPutEmail"/>
-                                <input placeholder="    email...  ( obrigatório * ) " type="text"  className="componentPutEmailLittleDevices"/>
+                                <input placeholder=" insira seu email... obrigatório *  " type="text"  className="componentPutEmail"/>
+                                <input placeholder=" email...  ( obrigatório * ) " type="text"  className="componentPutEmailLittleDevices"/>
                             </div>
 
                             <div className="componentConteinerAreaText">
-                                <textarea placeholder="    insira sua opinião ou critica..." type="text"  className="componentPutAreaText"/>
+                                <textarea placeholder="insira sua opinião ou critica..." type="text"  className="componentPutAreaText"/>
                             </div>
                             <div className=" componentButtonPersistence">
                                 <button className="componentEnviar">
