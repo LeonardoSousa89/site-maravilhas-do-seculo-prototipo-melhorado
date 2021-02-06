@@ -51,18 +51,17 @@ export default class App extends Component {
           this.setState(state)
          })
 
-         firebase.database().ref('usuarios').child(1).on('value',(snapshot)=>{
+         firebase.database().ref('usuarios').child(2).on('value',(snapshot)=>{
            let state = this.state
-           state.name = snapshot.val()  //.name
+           state.name = snapshot.val().name
            this.setState(state)
          })
 
-         firebase.database().ref('usuarios').child(1).on('value',(snapshot)=>{
+         firebase.database().ref('usuarios').child(2).on('value',(snapshot)=>{
           let state = this.state
-          state.age = snapshot.val()  //.age
+          state.age = snapshot.val().age
           this.setState(state)
         })
-         
     }
 
 

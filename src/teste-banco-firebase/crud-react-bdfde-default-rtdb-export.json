@@ -1,0 +1,25 @@
+{
+  "age" : "23",
+  "clientes" : [ null, {
+    "age" : 14,
+    "name " : "Derek"
+  }, {
+    "age" : 19,
+    "name" : "Brenda"
+  } ],
+  "clients" : {
+    "age" : 25,
+    "name" : "Dick Greyson"
+  },
+  "name" : "Mariana",
+  "token" : "012457895",
+  "usuarios" : [ null, {
+    "age" : "27",
+    "name" : "Manuela",
+    "token" : "0001010110"
+  }, {
+    "age" : "23",
+    "name" : "Isabela",
+    "token" : "00124568"
+  } ]
+}
