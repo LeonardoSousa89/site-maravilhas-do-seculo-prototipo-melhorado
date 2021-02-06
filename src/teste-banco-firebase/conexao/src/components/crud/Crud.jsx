@@ -7,6 +7,10 @@ import firebase from 'firebase'
 
 export default class Crud extends Component {
 
+
+
+
+
     constructor(props){
       super(props)
 
@@ -14,12 +18,17 @@ export default class Crud extends Component {
             token: '...carregando',
             name: '...nome aqui',
             age: 12,
+            novoInput:'',
             tokenInput: '',
             nameInput:'',
             ageInput:'',
             tokenInputAltered: '',
             nameInputAltered:'',
             ageInputAltered:'',
+            tokenInputAltered2: '',
+            nameInputAltered2:'',
+            ageInputAltered2:'',
+
           }
 
         
@@ -34,8 +43,9 @@ export default class Crud extends Component {
           }; 
 
           this.altera = this.altera.bind(this);
-          this.alteraCondicionado = this.alteraCondicionado.bind(this)
-
+          this.alteraCondicionado = this.alteraCondicionado.bind(this);
+          this.alteraCondicionado2 = this.alteraCondicionado2.bind(this)
+          this.inseriNovo = this.inseriNovo.bind(this)
           //initialize firebase  
             if(!firebase.apps.length){
               firebase.initializeApp(firebaseConfig);
@@ -88,16 +98,34 @@ export default class Crud extends Component {
     alteraCondicionado = (e) =>{
       firebase.database().ref('usuarios').child(1).child('token').set(this.state.tokenInputAltered);
       firebase.database().ref('usuarios').child(1).child('name').set(this.state.nameInputAltered);
-      firebase.database().ref('usuarios').child(1).child('age').set(this.state.ageInputAltered)
+      firebase.database().ref('usuarios').child(1).child('age').set(this.state.ageInputAltered);
+
+      e.preventDefault();
+    }
+   
+    alteraCondicionado2 = (e) =>{
+      
+      
+      this.inseriNovo()
+      e.preventDefault();
+    }
+
+    inseriNovo = (e) =>{
+      firebase.database().ref('clientes').child(1).set(this.state.novoInput);
 
       e.preventDefault();
     }
 
 
+
+
+
+
+
     render(){
 
       
-        const { token, name , age,  tokenInput, nameInput, ageInput, tokenInputAltered, nameInputAltered, ageInputAltered} = this.state;
+        const { token, name , age,  tokenInput, nameInput, ageInput, tokenInputAltered, nameInputAltered, ageInputAltered , tokenInputAltered2, nameInputAltered2, ageInputAltered2 } = this.state;
         
         
 
@@ -138,7 +166,7 @@ export default class Crud extends Component {
 
 
               
-            <h1>altera condicionado</h1>
+            <h1>altera condicionado + inseri novo atributo </h1>
 
             <form onSubmit={this.alteraCondicionado}>
                 <input 
@@ -165,6 +193,48 @@ export default class Crud extends Component {
             <h3>token:  { tokenInputAltered }</h3>
             <h3>nome:   { nameInputAltered }</h3>
             <h3>idade:  { ageInputAltered  }</h3>
+          
+          
+          
+          
+            <h1>altera condicionado2</h1>
+
+          <form onSubmit={this.alteraCondicionado2}>
+              <input 
+                type="text"
+                value={this.state.tokenInputAltered2}
+                onChange={(e) => this.setState({tokenInputAltered2: e.target.value})}
+              />
+                
+                <input 
+                type="text"
+                value={this.state.nameInputAltered2}
+                onChange={(e) => this.setState({nameInputAltered2: e.target.value})}
+              />
+
+              <input 
+                type="number"
+                value={this.state.ageInputAltered2}
+                onChange={(e) => this.setState({ageInputAltered2: e.target.value})}
+              />
+
+              <button type="submit">altera condicionado</button>
+
+
+              <input 
+                  type="text"
+                  value={this.state.novoInput}
+                  onChange={(e) => this.setState({novoInput: e.target.value})}
+                 />
+
+                 <button type="submit">novo atributo</button>
+          </form>
+
+          <h3>token:  { tokenInputAltered2 }</h3>
+          <h3>nome:   { nameInputAltered2 }</h3>
+          <h3>idade:  { ageInputAltered2  }</h3>
+
+          
           </div>
       );
     }
