@@ -11,9 +11,9 @@ export default class App extends Component {
       super(props)
 
         this.state = {
-          token:'...carregando',
-          name:'...nome aqui',
-          age:12
+          token: '...carregando',
+          name: '...nome aqui',
+          age: 12
         }
 
         
@@ -53,9 +53,15 @@ export default class App extends Component {
 
          firebase.database().ref('usuarios').child(1).on('value',(snapshot)=>{
            let state = this.state
-           state.name = snapshot.val()
+           state.name = snapshot.val()  //.name
            this.setState(state)
          })
+
+         firebase.database().ref('usuarios').child(1).on('value',(snapshot)=>{
+          let state = this.state
+          state.age = snapshot.val()  //.age
+          this.setState(state)
+        })
          
     }
 
@@ -63,23 +69,19 @@ export default class App extends Component {
 
     render(){
 
-      const { name , age} = this.state  
+      
+      const { name , age} = this.state 
+      
+      
+
+
 
       return (
         <div className="App">
 
-          <h1>
-            token:  { this.state.token }
-          </h1>
-
-          <h1>
-            nome: { name }
-          </h1>
-
-          
-          <h1>
-            idade: { age }
-          </h1>
+          <h1>token:  { this.state.token }</h1>
+          <h1>nome:   { name }</h1>
+          <h1>idade:  { age }</h1>
 
         </div>
       );
